@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+  background-color: black;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  border: 1px solid rgb(175, 118, 118);
+  margin: 1rem;
+  padding: 1rem;
+  color: aqua;
+}
+
+.input1,
+.input2 {
+  display: flex;
+  column-gap: 5rem;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+.input1 > input,
+.input3 > input,
+.input2 > input {
+  background-color: black;
+  color: aliceblue;
+  width: 15rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.input1 > input[type="text"],
+.input2 > input[type="text"],
+.input3 > input[type="text"] {
+  padding: 0rem 1rem;
+}
+
+.main > .btn > button {
+  background: whitesmoke;
+  box-shadow: 3px 6px 2px 1px rgba(170, 243, 53, 0.2);
+  width: 25rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.btn > button {
+  color: black;
+  font-size: 1rem;
+}
+
+.btn {
+  width: fit-content;
+}
+.input3 > input {
+  width: 55rem;
+  margin-top: 3rem;
+}
+
+table {
+  width: 70rem;
+
+  height: 2.5rem;
+  border-collapse: collapse;
+}
+
+thead > tr > th {
+  font-size: 1rem;
+  color: burlywood;
+}
+
+tbody > tr > td {
+  font-size: 1.1rem;
+}
+
+thead > tr > th,
+tbody > tr > td {
+  height: 2.5rem;
+  text-align: start;
+  padding: 0.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.error {
+  color: red;
+  font-size: 2rem;
+  width: fit-content;
+}
+
+.edit-delete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.button2 > .edit,
+.button2 > .delete {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 3rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.button2 > .delete {
+  margin-right: 0.2rem;
+}
+
+.edit-delete:nth-child(1) {
+  margin-left: 1rem;
+}
+
+.editStudent {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid white;
+}

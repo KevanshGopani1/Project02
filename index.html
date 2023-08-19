@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <h1>Student Management CRUD</h1>
+      </div>
+      <div class="input1">
+        <input class="name" type="text" placeholder="Name" />
+        <input class="email" type="text" placeholder="Email" />
+        <input class="gpa" type="text" placeholder="GPA" />
+      </div>
+      <div class="input2">
+        <input class="age" type="text" placeholder="Age" />
+        <input class="degree" type="text" placeholder="Degree" />
+      </div>
+      <div class="btn">
+        <button class="button" onclick="clickOnAddStudent()">
+          Add Student
+        </button>
+      </div>
+      <span class="error"></span>
+      <div class="input3">
+        <input
+          type="text"
+          class="search"
+          onchange="searchData(value)"
+          placeholder="
+        Search By Name, email or degree"
+        />
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Student Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>GPA</th>
+            <th>Degree</th>
+          </tr>
+        </thead>
+
+        <tbody class="tbody"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
