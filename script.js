@@ -159,3 +159,5 @@ const searchData = (searchInfo) => {
 
   tableData(temp);
 };
+
+console.log();
